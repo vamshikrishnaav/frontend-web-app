@@ -1,0 +1,67 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    border-radius: 9999px; /* pill shape */
+    background-color: #f2f5f5;
+    padding: 10px 15px;
+    width: 400px;
+    position: relative;
+  }
+  
+  .search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+    color: #333;
+  }
+  
+  .search-input::placeholder {
+    color: #bbb;
+  }
+  
+  .dropdown-wrapper {
+    position: relative;
+  }
+  
+  .dropdown-toggle {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f2f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .dropdown-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 10;
+  }
+  
+  .dropdown-menu div {
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .dropdown-menu div:hover {
+    background-color: #f3f4f6;
+  }
+  
