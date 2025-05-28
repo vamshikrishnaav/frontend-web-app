@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { FaUserCircle } from 'react-icons/fa';
 import {
   LayoutDashboard,
   Table,
   FileText,
   BarChart2
 } from 'lucide-react';
-import './SideBar.css'; 
+import './SideBar.css';
 
 const SideBar = () => {
   const location = useLocation();
@@ -20,7 +21,9 @@ const SideBar = () => {
 
   return (
     <div className="sidebar">
-      <div className="sidebar-top-circle"></div>
+      <div className="sidebar-top-circle">
+        <FaUserCircle className="circle-icon" size="100%" />
+      </div>
 
       <div className="sidebar-menu">
         {menuItems.map((item, index) => (
@@ -34,7 +37,9 @@ const SideBar = () => {
         ))}
       </div>
 
-      <div className="sidebar-bottom-circle"></div>
+      <div className="sidebar-bottom-circle">
+        <FaUserCircle className="circle-icon" size="100%" />
+      </div>
     </div>
   );
 };
